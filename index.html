@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вітаю з 25-річям</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+
+  <main class="stage">
+    <section class="book-shell" aria-label="Книга привітання">
+      <div class="book" id="book">
+        <div class="page-spread" id="pageSpread"></div>
+      </div>
+    </section>
+
+    <nav class="controls" aria-label="Керування книгою">
+      <button class="nav-button" id="prevBtn" type="button" aria-label="Попередня сторінка">‹</button>
+      <div class="progress">
+        <span id="pageNumber">1</span>
+        <span>/</span>
+        <span id="pageTotal">1</span>
+      </div>
+      <button class="nav-button" id="nextBtn" type="button" aria-label="Наступна сторінка">›</button>
+      <button class="sound-button" id="soundBtn" type="button">Увімкнути музику</button>
+    </nav>
+  </main>
+
+  <div class="start-layer" id="startLayer">
+    <button class="start-card" id="startBtn" type="button">
+      <span>Відкрити книгу</span>
+      <small>і запустити привітання</small>
+    </button>
+  </div>
+
+  <audio id="birthdayAudio" src="assets/music/birthday-song.mp3" loop preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
